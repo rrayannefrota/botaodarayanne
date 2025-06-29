@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <style>
+  
+    body {
+        transition: background-color 0.5s ease;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 8px;
+        color: #A52A2A;
+        background-color: #FF6347;
+    }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+  <script>
+  
+    function mudarCor() {
+    const cores = ["#FFFACD", "#00FFFF", "#00FF7F", "#FFFF00", "#FF69B4", "#8A2BE2", "#FFDEAD"];
+    const corAleatoria = cores[Math.floor(Math.random() * cores.length)];
+    document.body.style.backgroundColor = corAleatoria;
+    }
+
+  </script>
+
+</head>
+<body>
+    <button onclick="mudarCor()"><strong>Clique Aqui</strong></button>
+</body>
+</html>
